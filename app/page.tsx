@@ -4,6 +4,7 @@ import { schoolClasses } from "@/data/schoolClassInfo";
 import { ArrowDown } from "@phosphor-icons/react";
 import { Love_Ya_Like_A_Sister, Righteous } from "next/font/google";
 import Link from "next/link";
+import { BtnToggleLang } from "./components/btnToggleLang";
 
 const fLoveYaKikeASister = Love_Ya_Like_A_Sister({
   subsets: ["latin"],
@@ -58,6 +59,7 @@ const righteous = Righteous({ subsets: ["latin"], weight: "400" });
 export default function Home() {
   return (
     <main className="page-wrapper px-5">
+      <BtnToggleLang />
       <section className="h-[100vh] flex flex-col justify-between">
         <div>
           <header
@@ -69,7 +71,7 @@ export default function Home() {
             className={`text-center mt-16 text-md ${righteous.className}`}
           >
             Riquezas Sociais, Econômicas e Culturais do Espírito Santo -
-            “Embarque nesta viagem e conheça os avanços do nosso Estado!
+            Embarque nesta viagem e conheça os avanços do nosso Estado!
           </section>
 
           <p className="mt-16 text-justify	">

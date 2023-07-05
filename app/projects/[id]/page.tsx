@@ -5,6 +5,7 @@ import { ArrowLeft } from "@phosphor-icons/react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Righteous } from "next/font/google";
+import { BtnToggleLang } from "@/app/components/btnToggleLang";
 
 const righteous = Righteous({ subsets: ["latin"], weight: "400" });
 
@@ -32,6 +33,7 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
 
   return (
     <main className="h-[100vh] overflow-scroll">
+      <BtnToggleLang />
       <header className="absolute z-20 w-full bg-zinc-800 flex p-3 items-center justify-between rounded-b-[20px]">
         <Link href="/">
           <button className="h-10 text-zinc-800 w-10 rounded-full flex justify-center items-center bg-zinc-50">
