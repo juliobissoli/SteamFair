@@ -97,12 +97,12 @@ export default function Home() {
             {schoolClasses.map((el, i) => (
               <li
                 key={i}
-                className="w-1/2 w-md-1/4 flex flex-col items-center mb-8"
+                className="w-1/2 lg:w-1/3"
               >
-                <Link href={`/projects/${el.name}`}>
+                <Link href={`/projects/${el.name}`} className="flex flex-col items-center mb-8 justify-center">
                   <img
                     src={el.imagePrimary}
-                    className="h-[40vw] w-[40vw] h-md-[40vw] w-md-[40vw] rounded-full bg-zinc-50"
+                    className="h-[40vw] md:h-[220px] w-[40vw] md:w-[220px] rounded-full bg-zinc-50 object-cover"
                   ></img>
                   {el.label}
                 </Link>
