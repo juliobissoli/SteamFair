@@ -4,6 +4,10 @@ import { schoolClasses, SchoolClassesI } from "@/data/schoolClassInfo";
 import { ArrowLeft } from "@phosphor-icons/react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { Righteous } from "next/font/google";
+
+const righteous = Righteous({ subsets: ["latin"], weight: "400" });
+
 
 export default function ProjectDetail({ params }: { params: { id: string } }) {
   const dataClass: SchoolClassesI = {
@@ -52,6 +56,7 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
           className="h-[100vh] absolute w-full top-0"
         ></div>
         <section className="z-10 absolute flex  items-center py-20 page-wrapper relative h-[100vh]">
+          <header className={`text-center text-2xl ${righteous.className}`}>Arte que encanta no Espírito Santo</header>
           <div
             className="rounded-xl border-zinc-100 border-1 p-4 m-8"
             style={{
@@ -60,23 +65,9 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
             }}
           >
             <div className="w-full">
-              <p className="text-black text-center text-justify">
-                Texto faalandosobre oq ta rolando nessa bagaça, Texto
-                faalandosobre oq ta rolando nessa bagaçaTexto faalandosobre oq
-                ta rolando nessa bagaçaTexto faalandosobre oq ta rolando nessa
-                bagaçaTexto faalandosobre oq ta rolando nessa bagaçaTexto
-                faalandosobre oq ta rolando nessa bagaçaTexto faalandosobre oq
-                ta rolando nessa bagaçaTexto faalandosobre oq ta rolando nessa
-                bagaçaTexto faalandosobre oq ta rolando nessa bagaçaTexto
-                faalandosobre oq ta rolando nessa bagaça Texto faalandosobre oq
-                ta rolando nessa bagaça, Texto faalandosobre oq ta rolando nessa
-                bagaçaTexto faalandosobre oq ta rolando nessa bagaçaTexto
-                faalandosobre oq ta rolando nessa bagaçaTexto faalandosobre oq
-                ta rolando nessa bagaçaTexto faalandosobre oq ta rolando nessa
-                bagaçaTexto faalandosobre oq ta rolando nessa bagaçaTexto
-                faalandosobre oq ta rolando nessa bagaçaTexto faalandosobre oq
-                ta rolando nessa bagaçaTexto faalandosobre oq ta rolando nessa
-                bagaça
+              <p className="text-black text-center flex justify-center items-center h-[70vh]">
+                Texto descritivo sobre a exposição. Falando um pouco mais sobre
+                qual foi o trabalho das crianças, o que elas aprenderam, etc..
               </p>
             </div>
           </div>
