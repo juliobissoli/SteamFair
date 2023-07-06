@@ -9,12 +9,16 @@ import { BtnToggleLang } from "./components/btnToggleLang";
 import { ptTextsHome } from "../data/pt/home";
 import { enTextsHome } from "@/data/en/home";
 import { SplashAnimate } from "./components/splashAnimate";
+import Head from "next/head";
 
 export interface TextHomeI {
   subTitle: string;
   descriptionFair: string;
   showMore: string;
   expositionLabel: string;
+  prizeDrawTitle: string;
+  prizeDrawSubtitle: string;
+  prizeDrawBtn: string;
 }
 
 const fLoveYaKikeASister = Love_Ya_Like_A_Sister({
@@ -40,12 +44,15 @@ export default function Home() {
         <SplashAnimate
           onFinishAnimation={() => {
             console.log("acabo");
-            finiSplash(false)
+            finiSplash(false);
           }}
         />
       ) : (
         ""
       )}
+      <Head>
+        <title>STEAM FAIR</title>
+      </Head>
       <main className="page-wrapper px-5">
         <BtnToggleLang
           toggleLang={(newLang) => {
@@ -98,6 +105,15 @@ export default function Home() {
             </ul>
           </div>
         </section>
+        <footer className="border-t border-zinc-600 text-center">
+          <h3 className={`mt-4 text-2xl ${righteous.className}`}>
+          {textHome.prizeDrawTitle}
+          </h3>
+          <span>{textHome.prizeDrawSubtitle}</span>
+          <button className="w-full rounded-full bg-red-500 p-4 my-4">
+            {textHome.prizeDrawBtn}
+          </button>
+        </footer>
       </main>
     </>
   );
