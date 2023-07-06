@@ -63,11 +63,11 @@ export const enTextProjects: Array<TextProjectsI> = [
     id: "year4",
     projectSubtitle: "Places that tell histories and stories",
     projectDescription: [
-      "Maquetes - Pedra da Cebola e Pedra Azul",
-      "Painel com pontos turísticos",
-      "Esculturas 3D: Farol de Santa Luzia, 3ª ponte, Catedral",
-      "Praias",
-      "Curiosidades sobre o Espírito Santo",
+      "Maquettes - Pedra da Cebola and Pedra Azul",
+      "Panel with tourist spots",
+      "3D Sculptures: Santa Luzia Lighthouse, 3rd bridge, Cathedral",
+      "Beaches",
+      "Curiosities about Espírito Santo.",
     ],
   },
   {
