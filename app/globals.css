@@ -22,3 +22,83 @@ body {
   display: grid;
   grid-template-columns: 100%;
 }
+
+
+@keyframes colorPing {
+  0% {
+    color: rgba(204, 204, 204, 0.05); /* #cccc com opacidade de 5% */
+  }
+  100% {
+    color: rgba(255, 192, 203, 1); /* #FFC0CB com opacidade de 100% */
+  }
+}
+
+.changeColorPink {
+  animation: colorPing 200ms linear forwards;
+}
+
+
+
+@keyframes colorBlue {
+  0% {
+    color: rgba(204, 204, 204, 0.05); /* #cccc com opacidade de 5% */
+  }
+  100% {
+    color: rgba(135, 206, 235, 1); /* #FFC0CB com opacidade de 100% */
+  }
+}
+
+.changeColorBlue {
+  animation: colorBlue 200ms linear forwards;
+}
+
+
+
+@keyframes colorWhite {
+  0% {
+    color: rgba(204, 204, 204, 0.05); /* #cccc com opacidade de 5% */
+  }
+  100% {
+    color: rgba(255,255,255, 1); /* #FFC0CB com opacidade de 100% */
+  }
+}
+
+.changeColorWhite {
+  animation: colorWhite 200ms linear forwards;
+}
+
+
+
+.show-item {
+  opacity: 0;
+  animation: showWithOpacite 2s linear forwards;
+
+}
+
+
+@keyframes showWithOpacite {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+.remove-item {
+  opacity: 0;
+  animation: removeiOpacite 6500ms linear forwards;
+
+}
+
+
+@keyframes removeiOpacite {
+  98% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
