@@ -4,7 +4,17 @@ import { schoolClasses } from "@/data/schoolClassInfo";
 import { ArrowDown } from "@phosphor-icons/react";
 import { Love_Ya_Like_A_Sister, Righteous } from "next/font/google";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { BtnToggleLang } from "./components/btnToggleLang";
+import { ptTextsHome } from "../data/pt/home";
+import { enTextsHome } from "@/data/en/home";
+
+export interface TextHomeI {
+  subTitle: string;
+  descriptionFair: string;
+  showMore: string;
+  expositionLabel: string;
+}
 
 const fLoveYaKikeASister = Love_Ya_Like_A_Sister({
   subsets: ["latin"],
@@ -12,54 +22,28 @@ const fLoveYaKikeASister = Love_Ya_Like_A_Sister({
 });
 const righteous = Righteous({ subsets: ["latin"], weight: "400" });
 
-// const schoolClasses = [
-//   {
-//     label: "Toddler & Nursery",
-//     name: "toddler_and_nursery",
-//     imagePrimary: "toddler_and_nursery_baner.png",
-//   },
-//   {
-//     label: "JK",
-//     name: "jk",
-//     imagePrimary: "kj_baner.png",
-//   },
-//   {
-//     label: "SK",
-//     name: "sk",
-//     imagePrimary: "sk_baner3.png",
-//   },
-//   {
-//     label: "Year 1",
-//     name: "year1",
-//     imagePrimary: "year1_baner.png",
-//   },
-//   {
-//     label: "Year 2",
-//     name: "year2",
-//     imagePrimary: "year2_baner.png",
-//   },
-//   {
-//     label: "Year 3",
-//     name: "year3",
-//     imagePrimary: "year3_baner.png",
-//   },
-//   {
-//     label: "Year 4",
-//     name: "year4",
-//     imagePrimary: "year4_baner.png",
-//   },
-//   {
-//     label: "Year 5",
-//     name: "year5",
-//     imagePrimary: "year5_baner.png",
-//   },
-// ];
-
-
 export default function Home() {
+
+  const [textHome, setTranslations] = useState(ptTextsHome);
+  // const [isExpanded, toggleExpand] = useState(false);
+
+  useEffect(() => {
+    const text: TextHomeI =
+      localStorage.getItem("lang") === "pt-br" ? ptTextsHome : enTextsHome;
+    setTranslations(text);
+  }, []);
+
   return (
     <main className="page-wrapper px-5">
-      <BtnToggleLang />
+      <BtnToggleLang 
+      toggleLang={
+        (newLang) => {
+          console.log('muda ', newLang)
+          const text: TextHomeI = newLang === "pt-br" ? ptTextsHome : enTextsHome;
+          setTranslations(text)
+        }
+      }
+      />
       <section className="h-[100vh] flex flex-col justify-between">
         <div>
           <header
@@ -70,38 +54,28 @@ export default function Home() {
           <section
             className={`text-center mt-16 text-md ${righteous.className}`}
           >
-            Riquezas Sociais, Econômicas e Culturais do Espírito Santo -
-            Embarque nesta viagem e conheça os avanços do nosso Estado!
+            {textHome.subTitle}
           </section>
 
-          <p className="mt-16 text-justify	">
-            “Steam Fair” é uma feira que prevê a interação dos conhecimentos de
-            Ciência, Tecnologia, Engenharia, Artes e Matemática, possibilitando
-            ao aluno assimilar conhecimentos de forma integrada, tendo como base
-            de estudo um Projeto em comum que desperta a sua curiosidade,
-            contribui para a compreensão de problemas ambientais e sociais e
-            estimula o planejamento de ideias e resoluções criativas e
-            tecnológicas! Esse ano cada turma irá abordar temas da cultura,
-            história e belezas do nosso Espírito Santo!
-          </p>
+          <p className="mt-16 text-justify	">{textHome.descriptionFair}</p>
         </div>
         <footer className="flex justify-center mb-8">
-          <button className="flex flex-col items-center">
-            Ver mais
+          <a href="#cardsArea" className="flex flex-col items-center">
+            {textHome.showMore}
             <ArrowDown size={22}></ArrowDown>
-          </button>
+          </a>
         </footer>
       </section>
-      <section>
-        <h2 className="text-3xl mt-8">Exposições</h2>
+      <section id="cardsArea">
+        <h2 className="text-3xl mt-8">{textHome.expositionLabel}</h2>
         <div>
           <ul className="flex flex-wrap mt-8">
             {schoolClasses.map((el, i) => (
-              <li
-                key={i}
-                className="w-1/2 lg:w-1/3"
-              >
-                <Link href={`/projects/${el.name}`} className="flex flex-col items-center mb-8 justify-center">
+              <li key={i} className="w-1/2 lg:w-1/3">
+                <Link
+                  href={`/projects/${el.name}`}
+                  className="flex flex-col items-center mb-8 justify-center"
+                >
                   <img
                     src={el.imagePrimary}
                     className="h-[40vw] md:h-[220px] w-[40vw] md:w-[220px] rounded-full bg-zinc-50 object-cover"
