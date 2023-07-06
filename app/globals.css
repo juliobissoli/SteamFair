@@ -71,7 +71,7 @@ body {
 
 .show-item {
   opacity: 0;
-  animation: showWithOpacite 2s linear forwards;
+  animation: showWithOpacite 3s linear forwards;
 
 }
 
@@ -80,8 +80,11 @@ body {
   0% {
     opacity: 0;
   }
-  100% {
+  50% {
     opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
@@ -95,10 +98,29 @@ body {
 
 
 @keyframes removeiOpacite {
-  98% {
+  50% {
     opacity: 1;
   }
   100% {
     opacity: 0;
+  }
+}
+
+
+.fade-in {
+  animation: fadeInAnimate 300ms linear forwards;
+
+}
+
+
+@keyframes fadeInAnimate {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+
   }
 }

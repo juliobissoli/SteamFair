@@ -56,11 +56,10 @@ export const SplashAnimate: React.FC<Props> = ({ onFinishAnimation }: any) => {
   const [indexTime, setTime] = useState(0);
 
   useEffect(() => {
-
     setTimeout(() => {
       console.log("quando bater aqui acaba");
       onFinishAnimation();
-    }, 9 * 1000);
+    }, 10 * 1000);
   });
 
   const handleGetColorFlag = (num: number) => {
@@ -70,8 +69,10 @@ export const SplashAnimate: React.FC<Props> = ({ onFinishAnimation }: any) => {
   };
 
   return (
-    <section className="fixed z-40 bg-zinc-700 h-[100vh] w-[100vw]">
-      <div className="page-wrapper">
+    <section
+      className="fixed z-40 bg-zinc-800 h-[100vh] w-[100vw]"
+    >
+      <div className="page-wrapper ">
         <ul
           // style={{ animationDelay: "5500ms" }}
           className="flex flex-wrap w-full remove-item"
@@ -81,7 +82,7 @@ export const SplashAnimate: React.FC<Props> = ({ onFinishAnimation }: any) => {
             return (
               <li
                 key={j}
-                style={{ animationDelay: `${100 * j}ms` }}
+                style={{ animationDelay: `${50 * j}ms` }}
                 className={`w-1/6 h-[10vh] text-4xl flex text-zinc-600 justify-center items-center 
                 ${handleGetColorFlag(j % 6)}`}
               >
@@ -93,13 +94,13 @@ export const SplashAnimate: React.FC<Props> = ({ onFinishAnimation }: any) => {
         <div className="fixed items-center top-[50%] left-[50%] z-50 flex flex-col justify-center translate-x-[-50%] translate-y-[-50%] ">
           <h1
             style={{ animationDelay: "7s" }}
-            className={`show-item text-red-500 text-[100px] shadow-[0_35px_60px_-15px_rgba(240, 62, 62, 0.5)] ${londrinaShadow.className}`}
+            className={`show-item text-red-500 text-[100px] shadow-3xl] ${londrinaShadow.className}`}
           >
             Steam{" "}
           </h1>
           <h2
             style={{ animationDelay: `7s` }}
-            className={`show-item text-red-500 text-[48px]  shadow-[0_35px_60px_-15px_rgba(240, 62, 62, 0.5)] ${fLoveYaKikeASister.className}`}
+            className={`show-item text-red-500 text-[48px]  shadow-3xl] ${fLoveYaKikeASister.className}`}
           >
             Fair
           </h2>

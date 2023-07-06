@@ -34,7 +34,6 @@ const righteous = Righteous({ subsets: ["latin"], weight: "400" });
 export default function Home() {
   const pathname = usePathname()
   const [textHome, setTranslations] = useState(ptTextsHome);
-  const [splashIsVisible, finiSplash] = useState(false);
   // const [isExpanded, toggleExpand] = useState(false);
 
   useEffect(() => {
@@ -46,19 +45,7 @@ export default function Home() {
 
   return (
     <>
-      {splashIsVisible ? (
-        <SplashAnimate
-          onFinishAnimation={() => {
-            console.log("acabo");
-            finiSplash(false);
-          }}
-        />
-      ) : (
-        ""
-      )}
-      <Head>
-        <title>STEAM FAIR</title>
-      </Head>
+
       <main className="page-wrapper px-5">
         <BtnToggleLang
           toggleLang={(newLang) => {
@@ -71,20 +58,20 @@ export default function Home() {
         <section className="h-[100vh] flex flex-col justify-between">
           <div>
             <header
-              className={`text-center mt-16 text-4xl ${fLoveYaKikeASister.className}`}
-            >
-              STEAM FAIR
+              className={`fade-in text-center mt-16 text-4xl ${fLoveYaKikeASister.className}`}
+              >
+              <Link href="/">STEAM FAIR</Link>
             </header>
             <section
-              className={`text-center mt-16 text-md ${righteous.className}`}
+              className={`fade-in text-center mt-16 text-md  ${righteous.className}`}
             >
               {textHome.subTitle}
             </section>
 
-            <p className="mt-16 text-justify	">{textHome.descriptionFair}</p>
+            <p className="mt-16 text-justify	fade-in">{textHome.descriptionFair}</p>
           </div>
-          <footer className="flex justify-center mb-8">
-            <a href="#cardsArea" className="flex flex-col items-center">
+          <footer className="fade-in flex justify-center mb-8">
+            <a href="#cardsArea" className="fade-in flex flex-col items-center">
               {textHome.showMore}
               <ArrowDown size={22}></ArrowDown>
             </a>
@@ -98,7 +85,7 @@ export default function Home() {
                 <li key={i} className="w-1/2 lg:w-1/3">
                   <Link
                     href={`/projects/${el.name}`}
-                    className="flex flex-col items-center mb-8 justify-center"
+                    className="fade-in flex flex-col items-center mb-8 justify-center"
                   >
                     <img
                       src={el.imagePrimary}
