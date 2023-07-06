@@ -56,16 +56,11 @@ export const SplashAnimate: React.FC<Props> = ({ onFinishAnimation }: any) => {
   const [indexTime, setTime] = useState(0);
 
   useEffect(() => {
-    // const clock = setInterval(() => {
-    //   console.log("barte de um em um");
-    //   //   setTime(indexTime + 1)
-    // }, 1000);
 
     setTimeout(() => {
       console.log("quando bater aqui acaba");
-      //   clearInterval(clock);
       onFinishAnimation();
-    }, 8 * 1000);
+    }, 9 * 1000);
   });
 
   const handleGetColorFlag = (num: number) => {

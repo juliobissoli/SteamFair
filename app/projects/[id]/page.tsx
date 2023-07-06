@@ -9,6 +9,7 @@ import { BtnToggleLang } from "@/app/components/btnToggleLang";
 import { ptTextProjectsMap } from "@/data/pt/projects";
 import { enTextProjectsMap } from "@/data/en/projects";
 import { ProjectDetailItem } from "@/app/components/projectDetailItem";
+import Image from "next/image";
 
 export interface TextProjectsI {
   id: string;
@@ -59,7 +60,7 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
     <main className="h-[100vh] overflow-scroll">
       <BtnToggleLang toggleLang={handleSelectLang} />
       <header className="absolute z-20 w-full bg-zinc-800 flex p-3 items-center justify-between rounded-b-[20px]">
-        <Link href="/">
+        <Link href="/home">
           <button className="h-10 text-zinc-800 w-10 rounded-full flex justify-center items-center bg-zinc-50">
             <ArrowLeft size={20} />
           </button>
@@ -86,14 +87,14 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
             {textHome.projectSubtitle}
           </header>
           <div
-            className="rounded-xl border-zinc-100 border-1 p-4 m-8"
+            className="rounded-xl border-zinc-100 border-1 p-4 my-8 mx-4"
             style={{
               // backgroundColor: "rgb(0,0,0)",
               backgroundColor: "rgba(255,255,255, 0.4)",
             }}
           >
             <div className="w-full">
-              <div className="text-zinc-800 font-medium h-[70vh]">
+              <div className="text-zinc-800 font-medium">
                 <ul className="">
                   {textHome.projectDescription.map((el, i) => (
                     <li key={i} className="mb-4">
@@ -108,17 +109,22 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
             <h1 className="text-3xl mt-8">Fotos</h1>
             <ul>
               {dataInfo.imagesDetail.map((el, i) => (
-                // <li
-                //   className="mb-4 w-full text-zinc-700 text-center flex items-center justify-center h-[200px] bg-zinc-200 rounded-2xl"
-                // >
-                //   {el}
-                // </li>
-                <img
-                  loading="lazy"
-                  key={i}
-                  src={`../${el}`}
-                  className="object-cover mb-8 rounded-2xl border border-zinc-600 shadow-xl"
-                ></img>
+                // <img
+                //   loading="lazy"
+                //   key={i}
+                //   src={`../${el}`}
+                //   className="object-cover mb-8 rounded-2xl border border-zinc-600 shadow-xl"
+                // ></img>
+                <div className="w-full mb-8" key={i}>
+                  <Image
+                    src={`/${el}`}
+                    alt="teste"
+                    layout="responsive"
+                    width={1200}
+                    height={800}
+                    className="rounded-3xl  border border-zinc-600 shadow-xl"
+                  />
+                </div>
               ))}
             </ul>
           </div>

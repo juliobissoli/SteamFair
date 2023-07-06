@@ -1,5 +1,7 @@
 import './globals.css'
 import { Poppins } from 'next/font/google'
+import { usePathname } from 'next/navigation'
+import { useState } from 'react'
 
 const poppins = Poppins({ subsets: ['latin'], weight: '300' })
 
@@ -13,6 +15,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+
   return (
     <html lang="en">
       <body className={`bg-zinc-800 text-zinc-50 ${poppins.className}`}>{children}</body>
