@@ -98,6 +98,9 @@ export const schoolClasses: Array<SchoolClassesI> = [
     label: "Year 5",
     name: "year5",
     imagesDetail: [
+      "year5/img6.jpeg",
+      "year5/img7.jpeg",
+      "year5/img8.jpeg",
       "year5/img1.jpg",
       "year5/img2.jpg",
       "year5/img3.jpg",
