@@ -80,10 +80,10 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
             backgroundSize: "cover",
             zIndex: 1,
           }}
-          className="h-[100vh] absolute w-full top-0"
+          className="h-[100vh] absolute w-full top-0 bg-gradient-to-r from-cyan-500 to-blue-500"
         ></div>
         <section className="z-10 absolute flex  items-center py-20 page-wrapper relative h-[100vh]">
-          <header className={`text-center text-2xl ${righteous.className}`}>
+          <header className={`text-center text-zinc-50 text-2xl ${righteous.className}`}>
             {textHome.projectSubtitle}
           </header>
           <div
@@ -105,29 +105,33 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
               </div>
             </div>
           </div>
-          <div className="bg-zinc-800  page-wrapper p-5 rounded-t-[32px]">
-            <h1 className="text-3xl mt-8">Fotos</h1>
-            <ul>
-              {dataInfo.imagesDetail.map((el, i) => (
-                // <img
-                //   loading="lazy"
-                //   key={i}
-                //   src={`../${el}`}
-                //   className="object-cover mb-8 rounded-2xl border border-zinc-600 shadow-xl"
-                // ></img>
-                <div className="w-full mb-8" key={i}>
-                  <Image
-                    src={`/${el}`}
-                    alt="teste"
-                    layout="responsive"
-                    width={1200}
-                    height={800}
-                    className="rounded-3xl  border border-zinc-600 shadow-xl"
-                  />
-                </div>
-              ))}
-            </ul>
-          </div>
+          {dataInfo.imagesDetail.length > 0 ? (
+            <div className="bg-zinc-800  page-wrapper p-5 rounded-t-[32px]">
+              <h1 className="text-3xl mt-8">Fotos</h1>
+              <ul>
+                {dataInfo.imagesDetail.map((el, i) => (
+                  // <img
+                  //   loading="lazy"
+                  //   key={i}
+                  //   src={`../${el}`}
+                  //   className="object-cover mb-8 rounded-2xl border border-zinc-600 shadow-xl"
+                  // ></img>
+                  <div className="w-full mb-8" key={i}>
+                    <Image
+                      src={`/${el}`}
+                      alt="teste"
+                      layout="responsive"
+                      width={1200}
+                      height={800}
+                      className="rounded-3xl  border border-zinc-600 shadow-xl"
+                    />
+                  </div>
+                ))}
+              </ul>
+            </div>
+          ) : (
+            ""
+          )}
         </section>
       </div>
     </main>

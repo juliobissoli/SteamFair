@@ -22,7 +22,7 @@ export const enTextProjects: Array<TextProjectsI> = [
     projectSubtitle:
       "Together and mixed - miscegenation, flora and fauna of ES",
     projectDescription: [
-      "SK Red will present a variety of activities related to the fauna and flora of the Atlantic Forest in Espírito Santo. Students will have the opportunity to learn about three native animals of the state: the Harpy Eagle, the Bush Dog, and the Yellow-breasted Caiman. There will be a representation of these animals, allowing children to learn about their characteristics and peculiarities. Two interactive activities are planned. In the first interaction, they will be challenged to put the correct food in the mouth of the caiman. In the second interaction, students will be invited to place the correct food in the den of the bush dog.",
+      "SK Red will present a variety of activities related to the fauna and flora of the Atlantic Forest in Espírito Santo. Students will have the opportunity to learn about three native animals of the state: the 'Harpia', 'Cachorro do mato' and 'Jacaré do papo amarelo'. There will be a representation of these animals, allowing children to learn about their characteristics and peculiarities. Two interactive activities are planned. In the first interaction, they will be challenged to put the correct food in the mouth of the 'jacaré'. In the second interaction, students will be invited to place the correct food in the den of 'cachorro do mato'.",
       "SK White will explore the cultural mix in Espírito Santo, with a focus on three peoples who have helped shape our state: Indigenous people, Europeans (Portuguese, Italians, Germans, etc.), and Africans. We will learn about their cultures, traditions, and contributions to the diversity of the state, creating various panels and interactions on the theme!",
     ],
   },
@@ -58,7 +58,7 @@ export const enTextProjects: Array<TextProjectsI> = [
     projectSubtitle: "Places that tell histories and stories",
     projectDescription: [
       "The Year 4 class will present a variety of activities to explore the wonders of Espírito Santo.",
-      "In the exhibition, we will find 3D reproductions of famous landmarks such as the Third Bridge, Santa Luzia Lighthouse, and the Cathedral. We will also have models of Pedra da Cebola and Pedra Azul, panels with artistic representations of tourist spots and their curiosities, and a special space dedicated to the beaches of Espírito Santo, where we can learn about the diversity of beaches that the state offers.",
+      "In the exhibition, we will find 3D reproductions of famous landmarks such as the 'Terceira ponte', 'Farol de Santa Luzia', and the 'Catedral'. We will also have models of Pedra da Cebola and Pedra Azul, panels with artistic representations of tourist spots and their curiosities, and a special space dedicated to the beaches of Espírito Santo, where we can learn about the diversity of beaches that the state offers.",
     ],
   },
   {

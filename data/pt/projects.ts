@@ -12,23 +12,23 @@ export const ptTextProjects = [
     projectSubtitle:
       "Um mergulho no fundo do mar - Projetos diversos na preservação ambiental",
     projectDescription: [
-      "Os alunos do JK prepararam uma vrdadeira experiência sensorial imersiva no mundo marinho! Terá exposto uma representação artística de tartarugas nascendo e indo para o mar. Para tornar tudo mais divertido, incluímos uma atividade interativa onde elas acertavam sardinhas na boca de uma tartaruga desenhada. Essas atividades estimulantes permitirão que os alunos e visitantes aprendam sobre o fundo do mar, as tartarugas marinhas e se divertam ao mesmo tempo!",
+      "Os alunos do JK prepararam uma verdadeira experiência sensorial imersiva no mundo marinho! Terá exposto uma representação artística de tartarugas nascendo e indo para o mar. Para tornar tudo mais divertido, incluímos uma atividade interativa onde elas acertavam sardinhas na boca de uma tartaruga desenhada. Essas atividades estimulantes permitirão que os alunos e visitantes aprendam sobre o fundo do mar, as tartarugas marinhas e se divertam ao mesmo tempo!",
     ],
   },
   {
     id: "sk",
     projectSubtitle: "Juntos e misturados - miscigenação, flora e fauna do ES",
     projectDescription: [
-      "O SK Red apresentará uma variedade de atividades relacionadas à fauna e flora da Mata Atlântica no Espírito Santo.Os alunos terão a oportunidade de conhecer três animais nativos do estado: a Harpia, o cachorro do mato e o jacaré do papo amarelo. Será realizada uma representação desses animais, permitindo que as crianças aprendam sobre suas características e peculiaridades.Duas atividades interativas estão planejadas.Na primeira interação, eles serão desafiados a colocar o alimento correto na boca do jacaré.  Na segunda interação, os alunos serão convidados a colocar os alimentos corretos na toca do cachorro do mato.",
-      "O SK White irá explorar a miscignação no Espírito Santo, com foco em três povos e ajudaram a formar o nossoEstado: Os Indígenas, os europeus (portugueses, italianos, alemães, etc) e africanos. Aprendemos sobre suas culturas, tradições e contribuições para a diversidade do estado, produzindo diversos paineis e interações sobre o tema!",
+      "O SK Red apresentará uma variedade de atividades relacionadas à fauna e flora da Mata Atlântica no Espírito Santo. Os alunos terão a oportunidade de conhecer três animais nativos do estado: a Harpia, o cachorro do mato e o jacaré do papo amarelo. Será realizada uma representação desses animais, permitindo que as crianças aprendam sobre suas características e peculiaridades. Duas atividades interativas estão planejadas. Na primeira interação, eles serão desafiados a colocar o alimento correto na boca do jacaré.  Na segunda interação, os alunos serão convidados a colocar os alimentos corretos na toca do cachorro do mato.",
+      "O SK White irá explorar a miscigenação no Espírito Santo, com foco em três povos e ajudaram a formar o nossoEstado: Os Indígenas, os europeus (portugueses, italianos, alemães, etc) e africanos. Aprendemos sobre suas culturas, tradições e contribuições para a diversidade do estado, produzindo diversos painéis e interações sobre o tema!",
     ],
   },
   {
     id: "year1",
     projectSubtitle: "Arte que encanta no Espírito Santo",
     projectDescription: [
-      "Year 1 trabalhará com diversos aspectos da nossa cultura! Foram montados painéis com mosaicos e representações da arquitetura capixaba. Também temos um dedicado a arte da fotografia, nspirado no renomado fotógrafo Sebastião Salgado.",
-      "Outro painel irá expor a produção de máscaras de congo, tradicionais no Espirito Santo. Além disso, foi criado um cantinho especial para as famosas panelas de barro, e, inpirados na obra da artista capixaba Vânia Caus, temos esculturas feitas de materiais reciclados.",
+      "Year 1 trabalhará com diversos aspectos da nossa cultura! Foram montados painéis com mosaicos e representações da arquitetura capixaba. Também temos um dedicado a arte da fotografia, inspirado no renomado fotógrafo Sebastião Salgado.",
+      "Outro painel irá expor a produção de máscaras de congo, tradicionais no Espirito Santo. Além disso, foi criado um cantinho especial para as famosas panelas de barro, e, inspirados na obra da artista capixaba Vânia Caus, temos esculturas feitas de materiais reciclados.",
       "Na exposição do Year 1 também é possível encontrar o “Quintal da Leitura”, Dicionário Capixaba e oficinas de leitura e jogos!",
     ],
   },
@@ -46,8 +46,8 @@ export const ptTextProjects = [
     projectSubtitle: "Culinária e pesca capixaba",
     projectDescription: [
       "A turma do Year 3 mergulhou em um mundo de descobertas sobre a culinária e os produtos do Espírito Santo.",
-      "Na exposição, irão explorar  a famosa moqueca capixaba e seus ingredientes,  além apresentar uma panela de barro feita por eles. Também será encontrado um painel  sobre as diferentes espécies de peixes encontradas no litoral capixaba.a importância da pescaria, destacando como essa atividade contribui para o sustento das comunidades litorâneas e a economia local e uma interação sobre o tema.",
-      "Além disso, compatilharão sobre outros produtos cultivados no nosso Estado, o café e o cacau.",
+      "Na exposição, irão explorar  a famosa moqueca capixaba e seus ingredientes,  além de apresentar uma panela de barro feita por eles. Também será encontrado um painel  sobre as diferentes espécies de peixes encontradas no litoral capixaba, a importância da pescaria, destacando como essa atividade contribui para o sustento das comunidades litorâneas e a economia local e uma interação sobre o tema.",
+      "Além disso, compartilharão sobre outros produtos cultivados no nosso Estado, o café e o cacau.",
     ],
   },
   {
@@ -55,7 +55,7 @@ export const ptTextProjects = [
     projectSubtitle: "Lugares que contam histórias",
     projectDescription: [
       "A turma do Year 4  apresentará uma variedade de atividades para explorar as maravilhas do Espírito Santo.",
-      "Encontraremos na exposição reproduções em 3D de famosos pontos turísticos como terceira ponte, Farol de Santa Luzia e Catedral. Também teremos maquetes da Pedra da Cebola  e Pedra Azul, paineis com representações artisticas de pontos turísticos e suas curiosidades, além  um espaço especial para as praias capixabas, onde podemos aprender sobre a diversidade de praias que o estado oferece.",
+      "Encontraremos na exposição reproduções em 3D de famosos pontos turísticos como terceira ponte, Farol de Santa Luzia e Catedral. Também teremos maquetes da Pedra da Cebola  e Pedra Azul, painéis com representações artísticas de pontos turísticos e suas curiosidades, além  um espaço especial para as praias capixabas, onde podemos aprender sobre a diversidade de praias que o estado oferece.",
     ],
   },
   {

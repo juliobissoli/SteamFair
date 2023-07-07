@@ -29,11 +29,7 @@ export default function Home() {
             router.push("/home");
           }}
         />
-      ) : (
-        <div className="w-full h-[100vh] flex justify-center items-center">
-          <button>ver mais</button>
-        </div>
-      )}
+      ) : ''}
     </>
   );
 }
